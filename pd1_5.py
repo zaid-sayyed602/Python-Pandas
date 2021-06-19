@@ -1,0 +1,13 @@
+import pandas as pd
+df=pd.read_csv("Teams.csv")
+print(df)
+div=df.groupby("Rank")
+print(div.groups)
+a=div.get_group(1)
+b=div.get_group(2)
+c=div.get_group(3)
+d=div.get_group(4)
+print(a)
+print(b)
+print(c)
+print(d)
